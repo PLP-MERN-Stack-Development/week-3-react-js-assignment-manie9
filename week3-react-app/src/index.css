@@ -1,0 +1,142 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #5A5A5A; /* Text color for light mode (Soft gray) */
+  background-color: rgb(234, 228, 228); /* Background color for light mode  */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.dark {
+  color: #D4AF37; /* Text color for dark mode (Gold) */
+  background-color:  #242424; /* Background color for dark mode (Dark earthy gray) */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit; /* Use the same background color as the theme */
+  padding: 1rem; /* Add padding for smaller screens */
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #264653; /* Accent color for light mode (Muted teal) */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+html.dark h1 {
+  color: #D4AF37; /* Accent color for dark mode (Gold) */
+}
+
+button {
+  border-radius: 12px;
+  border: 2px solid transparent;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #F4A261; /* Button background for light mode (Pastel orange) */
+  color: white; /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0.5rem; /* Add spacing between buttons */
+}
+
+button:hover {
+  background-color: #E76F51; /* Button hover for light mode (Muted coral) */
+  transform: scale(1.05); /* Add hover effect */
+}
+
+html.dark button {
+  background-color: #556B2F; /* Button background for dark mode (Leafy green) */
+  color: white;
+}
+
+html.dark button:hover {
+  background-color: #6B8E23; /* Button hover for dark mode (Lighter leafy green) */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #2A9D8F; /* Focus color for both modes (Pastel teal) */
+}
+
+a {
+  font-weight: 600;
+  color: #2A9D8F; /* Link color for light mode (Pastel teal) */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #264653; /* Slightly darker teal for light mode */
+  text-decoration: underline;
+}
+
+html.dark a {
+  color: #D4AF37; /* Link color for dark mode (Gold) */
+}
+
+html.dark a:hover {
+  color: #FFD700; /* Brighter gold for dark mode */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.2em; /* Adjust heading size for laptops */
+  }
+
+  button {
+    padding: 0.5em 1.3em; /* Adjust button padding for laptops */
+    font-size: 0.95em; /* Adjust button font size for laptops */
+  }
+
+  body {
+    padding: 1rem; /* Adjust padding for laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em; /* Adjust heading size for tablets */
+  }
+
+  button {
+    padding: 0.4em 1.2em; /* Adjust button padding for tablets */
+    font-size: 0.9em; /* Adjust button font size for tablets */
+  }
+
+  body {
+    padding: 0.8rem; /* Adjust padding for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em; /* Adjust heading size for phones */
+  }
+
+  button {
+    padding: 0.3em 1em; /* Adjust button padding for phones */
+    font-size: 0.8em; /* Adjust button font size for phones */
+  }
+
+  body {
+    padding: 0.5rem; /* Adjust padding for phones */
+  }
+}
