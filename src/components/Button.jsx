@@ -1,3 +1,6 @@
+/*
+Button.jsx
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -66,4 +69,5 @@ Button.propTypes = {
   className: PropTypes.string,
 };
 
+/*
 export default Button; 

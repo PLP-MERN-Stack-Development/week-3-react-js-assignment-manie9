@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+ System files
+Thumbs.db
+*.swp
+
+
+# Cache files
+.cache/
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Coverage reports
+coverage/
+
+# React-specific files
+*.env
+.eslintcache

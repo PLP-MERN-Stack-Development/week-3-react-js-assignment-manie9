@@ -1,3 +1,6 @@
+/*App.jxs
+
+
 import { useState } from 'react';
 import './App.css';
 
@@ -55,7 +58,7 @@ function App() {
             Fetch and display data from an API here
           </p>
         </div>
-      </main>
+      </main> 
 
       {/* Footer component will go here */}
       <footer className="bg-white dark:bg-gray-800 shadow mt-auto">
@@ -68,5 +71,5 @@ function App() {
     </div>
   );
 }
-
+/*
 export default App; 
