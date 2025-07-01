@@ -78,4 +78,4 @@ api-data
 
 
 
-The application is deployed and accessible at:
+The application is deployed and accessible at: https://glittery-licorice-2bf055.netlify.app
